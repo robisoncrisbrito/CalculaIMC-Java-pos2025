@@ -68,10 +68,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         double altura = Double.parseDouble( etAltura.getText().toString() );
-        double peso = Double.parseDouble( etPeso.getText().toString() );
+        double peso =    Double.parseDouble( etPeso.getText().toString() );
 
-        System.out.println( altura );
-        System.out.println( altura );
 
         //processamento
         double resultado = peso / Math.pow( altura, 2 ) ;
@@ -79,6 +77,8 @@ public class MainActivity extends AppCompatActivity {
         //saída
         DecimalFormat df = new DecimalFormat( "0.00" );
         tvResultado.setText( df.format( resultado ) );
+
+        System.out.println( "teste" );
 
     }
 
